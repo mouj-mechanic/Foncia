@@ -1,0 +1,7 @@
+Feature: Recherche de bien sur Foncia
+
+  Scenario: Rechercher un appartement à Paris avec un loyer MAX 1500€
+    Given Je suis sur la page d'accueil de Foncia
+    When Je fais quelques vérifications dans la homepage
+    And Je fais la recherche de bien suivante: "Louer un appartement à Paris avec un loyer MAX 1500€"
+    Then Je vérifie les résultats de la recherche
